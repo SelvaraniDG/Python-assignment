@@ -7,7 +7,8 @@ def remove_duplicates(list):
             seen.add(item)
     return res
 
-list = [12, 24, 35, 24, 88, 120, 155, 88, 120, 155]
+user_input = input("Enter the list of numbers separated by spaces: ")
+list = [int(x) for x in user_input.split()]
 
 result = remove_duplicates(list)
-print(result)
+print("List after removing duplicates:", result)
