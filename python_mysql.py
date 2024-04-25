@@ -38,8 +38,8 @@ def main():
             print(record)
 
     # #INSERT DATA
-    # insert_query = "INSERT INTO `db`.`employees` (`emp_no`, `birth_date`, `first_name`, `last_name`, `gender`, `hire_date`) VALUES ('98', '2086-04-04', 'Jeson', 'joy', 'M', '2027-11-04')"        
-    # cursor.execute(insert_query)
+    insert_query = "INSERT INTO `db`.`employees` (`emp_no`, `birth_date`, `first_name`, `last_name`, `gender`, `hire_date`) VALUES ('251', '2086-04-04', 'Jessy', 'joy', 'F', '2027-11-04')"        
+    cursor.execute(insert_query)
 
     # UPDATE DATA
     # update_query = "UPDATE employees SET first_name = 'Jane' WHERE emp_no = 101"
