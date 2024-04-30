@@ -6,10 +6,10 @@ def print_tree(directory, indent=''):
     items = os.listdir(directory)
     for item in items:
         item_path = os.path.join(directory, item)
-        if os.path.isdir(item_path):
+        if os.path.isdir(item_path) and not item == ".git":
             print(indent + item + '/')
             print_tree(item_path, indent + '  ')
-        else:
+        elif os.path.isfile(item_path):
             print(indent + item)
 
 def main():
